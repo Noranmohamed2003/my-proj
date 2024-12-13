@@ -1,0 +1,177 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo"></div>
+            <ul id="sidmenu">
+                <li><a href="#header"> Home</strong></a></li>
+                <li><a href="#About">About Me </a></li>
+                <li><a href="#courses">courses</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#content">contact</a></li>
+                <i class="fa-regular fa-circle-xmark " onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </div>
+    </nav>
+   
+<div id="header">
+    <div class="header-text">
+        <p>     BIS Student    </p>
+        <br>
+        <h1>  Hi , My name is <span>Noran</span> </h1>
+    </div>  
+</div>
+<div>
+    <div id="About">
+        <div class="contaner">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="me.jpg" width="500px" height="500px">
+                </div>
+                <div class="About-col-2">
+                    <h1 class="sub-title "> About Me : </h1>
+                    <br><br><P><br><br> <br><b> Noran Mohamed </b>, <b> age </b> 21, a student at Tanta University, Faculty of Commerce,<br> <br>BIS (Business Information System) Department and <br><br>GBA (3.8) Exellent, studying programming languages, <br><br> marketing, sales,and management.</P>
+                     <br>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentap('programming languages')">programming languages</p>
+                        <p class="tab-links" onclick="opentap('More Information')"> More Information</p>
+                        
+                    </div>
+                    <div class="tap-contents active-tap" id="programming languages">
+                        <ul>
+                            <li><span>Html</span></li>
+                            <li><span>Css</span></li>
+                            <li><span>C#</span></li>
+                            <li><span>Java-scipt</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="tap-contents" id="More Information">
+                        <ul>
+                            <li><span>I have studied more subjects such as </span></li>
+                            <li><span> CSS, DSS , SAD , Expert System</span></li>
+                            <li><span>accounting, insurance, mathematics, statistics.</span></li>
+                            <li><span>Economics, Entrepreneurship, Research Methods Report Writing, Network </span></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="courses">
+    <div class="container">
+        <h1 class="sub-title "> My courses </h1>
+        <div class="courses-list">
+            <h2>My courses  trainings and certificates</h2>
+            <p> - Has successfully completed a 45 hour training course and developed a  
+                final project for a potential startup innovegypt program   <br> 
+               <br>- CERTIFICATE BANQUE MISR <br> 
+               <br> - Digital marketing course with American chamber in egypt  (UCCD)  <br>
+               <br> - The Training Program For CIB Bank "Future Employee for the Digital 
+                Era". <br>  <br>-The Training Program For CIB Bank "Bootcamp on Financial Inclusion 
+                and Sustainability". <br> <br>- -Data Analytics: Dashboard vs. Data Stories In Linked in.  <br>
+                <br> - Social Media Stories: Creative Strategies and Tips In Linked in.  <br>
+                <br> - Social Success at Work In Linked in.  <br>
+                <br> - Take a more Creative Approach to problem Solving In Linked in.  <br>
+                <br>  - Simple Strategies to Boost Creativity and Productivity In Linked in.  <br>
+                <br> - Get Ready for Generative AI In Linked in.  <br>
+                <br>- Mindful Approaches to Defeat Distracton and Build Greater Mental 
+                Resilience In Linked in.  <br>
+                <br> - Improving Your Judgment for Better Decision Making In Linked in. <br> 
+                <br>- Courses of marketing and sales from El-abd sporting club </p>
+
+        </div>
+    </div>
+</div>
+
+<div id="skills">
+    <div class="container">
+        <div class="head-skills"><h1> My Skills :</h1></div>
+       <div class="skills-list">
+        <div class="skills-col-1">
+            <p>   
+                - Business analysis , Sales processing ,English skills: very good   <br>
+                <br>- Product marketing  <br>
+                <br>- Web development  <br>
+                <br> - Time management  <br>
+                <br>- Communication  <br>
+                <br>- Conflict resolution  <br>
+                <br>- Problem-solving  <br>
+                <br> - Negotiation  <br>
+                <br> - Attention to detail  <br>
+                <br>- Flexibility   <br>
+                <br>- Leadership and teamwork   <br>
+                <br>- High Organized, Helpful and Capable of working under pressure .  <br>
+                <br>- Video editing    <br>
+                <br>- Analytical thinkin  <br> </p></div>
+            <div class="skills-col-2">
+                <img src="A.jpg" alt="skills-photo">
+            </div>
+         </div> 
+       </div>
+ </div>
+</div>
+ <!-- contact -->
+<div id="content">
+        <div class="row">
+            <div class="content-left">
+                <h1 class="sub-title" > contact me </h1>
+                <br><p> noranfet2003@gmail.com </p>
+                <br><p> 01069702027 </p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    
+                </div>
+            </div>
+     </div>
+</div>
+
+<!-- java script -->
+
+ <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tap-contents");
+
+function opentap (tapname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for( tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tap");
+    }
+    event.target.classList.add("active-link")
+    document.getElementById(tapname).classList.add("active-tap");
+}
+
+</script> 
+<script>
+var sidmenu = document.getElementById("sidmenu");
+function openmenu (){
+    sidmenu.style.right="0";
+}
+function closemenu (){
+    sidmenu.style.right="-200px";
+}
+</script>
+</body>
+</html> 
